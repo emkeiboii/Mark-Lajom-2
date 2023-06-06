@@ -1,7 +1,7 @@
 import React from "react";
 
 const RSide = () => {
-  return <div>RSide</div>;
+  return <div className="hidden md:hidden lg:block">RSide</div>;
 };
 
 export default RSide;
