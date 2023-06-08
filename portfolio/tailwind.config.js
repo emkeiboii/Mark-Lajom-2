@@ -8,7 +8,11 @@ export default {
       lavender: "#AF98E6",
       white: "#DFDFDF",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ["Inter"],
+      },
+    },
   },
   plugins: [],
 };
