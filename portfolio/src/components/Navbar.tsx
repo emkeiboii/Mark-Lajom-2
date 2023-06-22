@@ -13,7 +13,7 @@ const Navbar = () => {
     >
       <Link
         to="hero"
-        className="text-blue text-3xl font-bold cursor-pointer"
+        className="text-blue text-3xl font-bold cursor-pointer hover:text-opacity-80 duration-200 ease-in-out"
         spy={true}
         smooth={true}
         offset={-100}
@@ -22,17 +22,17 @@ const Navbar = () => {
         emkei
       </Link>
       <ul className="flex gap-5 items-center">
-        <li className="">
+        <li className="hover:text-blue duration-200 ease-in-out">
           <Link to="about" className="cursor-pointer">
             <span className="text-blue">&gt;</span>about
           </Link>
         </li>
-        <li>
+        <li className="hover:text-blue duration-200 ease-in-out">
           <Link to="work" className="cursor-pointer">
             <span className="text-blue">&gt;</span>work
           </Link>
         </li>
-        <li>
+        <li className="hover:text-blue duration-200 ease-in-out">
           <Link
             to="contact"
             className="cursor-pointer"
@@ -45,7 +45,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <button className="outline outline-offset-2 outline-1 rounded text-lavender py-2 px-5">
+          <button className="outline outline-1 rounded text-blue py-2 px-5 hover:bg-blue hover:bg-opacity-20 duration-200 ease-out">
             CV
           </button>
         </li>

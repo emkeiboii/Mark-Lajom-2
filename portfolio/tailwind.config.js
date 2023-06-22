@@ -7,6 +7,7 @@ export default {
       blue: "#53C7DA",
       lavender: "#AF98E6",
       white: "#DFDFDF",
+      grey: "#99A6A8",
     },
     extend: {
       fontFamily: {
