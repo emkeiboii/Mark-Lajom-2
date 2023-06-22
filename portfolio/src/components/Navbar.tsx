@@ -23,7 +23,14 @@ const Navbar = () => {
       </Link>
       <ul className="flex gap-5 items-center">
         <li className="hover:text-blue duration-200 ease-in-out">
-          <Link to="about" className="cursor-pointer">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer"
+          >
             <span className="text-blue">&gt;</span>about
           </Link>
         </li>

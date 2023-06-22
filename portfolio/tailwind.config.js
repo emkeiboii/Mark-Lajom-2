@@ -13,6 +13,9 @@ export default {
       fontFamily: {
         body: ["Inter"],
       },
+      gridTemplateColumns: {
+        2: "repeat(2, minmax(140px, 200px))",
+      },
     },
   },
   plugins: [],
