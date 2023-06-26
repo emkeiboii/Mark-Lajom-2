@@ -9,7 +9,7 @@ const Navbar = () => {
     <div
       className={`flex justify-between py-6 px-10 sticky ${
         scrollDirection === "down" ? "-top-24" : "top-0"
-      } h-24 bg-blue-200 transition-all duration-500`}
+      } h-24 bg-navy transition-all duration-500 backdrop-blur-sm shadow-lg`}
     >
       <Link
         to="hero"
