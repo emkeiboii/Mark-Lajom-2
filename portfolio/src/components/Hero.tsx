@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div id="hero" className="pb-48 pt-44">
+    <div id="hero" className="pb-48 pt-48">
       <h2 className="font-mono text-blue">Hello! My name is:</h2>
       <h1 className="font-extrabold text-8xl -mx-1 mb-3 text-blue ">
         Mark Lajom

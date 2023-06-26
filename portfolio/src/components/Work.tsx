@@ -9,7 +9,7 @@ const Work = () => {
       </h1>
       {works.map((item) => (
         <div key={item.id} className="flex mb-52 gap-8">
-          <img src={item.projectImage} alt="" className="max-w-xs" />
+          <img src={item.projectImage} alt="" className="max-w-xs shadow-lg" />
           <div>
             <h2 className="font-mono text-blue">{item.projectName}</h2>
             <p className="text-grey text-justify">{item.description}</p>
