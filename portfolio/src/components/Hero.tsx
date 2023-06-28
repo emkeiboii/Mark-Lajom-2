@@ -2,12 +2,14 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div id="hero" className="pb-48 pt-48">
+    <div id="hero" className="py-48 px-4 sm:px-0 md:px-0">
       <h2 className="font-mono text-blue">Hello! My name is:</h2>
-      <h1 className="font-extrabold text-8xl -mx-1 mb-3 text-blue ">
+      <h1 className="font-extrabold text-5xl md:text-7xl lg:text-8xl -mx-1 mb-3 text-blue  ">
         Mark Lajom
       </h1>
-      <h3 className="font-extrabold text-3xl">I'm a front-end web developer</h3>
+      <h3 className="font-extrabold text-xl md:text-2xl lg:text-3xl">
+        I'm a front-end web developer
+      </h3>
       <p className="text-grey">
         I love coding, cooking and eating. I'm inspired by creativity and driven
         by passion

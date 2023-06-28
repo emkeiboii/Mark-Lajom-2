@@ -13,7 +13,7 @@ function App() {
       <Navbar></Navbar>
       <div className="flex justify-between">
         <LSide></LSide>
-        <div className="lg:px-64 w-full md:px-8 sm:px-4">
+        <div className="lg:px-32 w-full md:px-8 sm:px-4">
           <Hero></Hero>
           <About></About>
           <Work></Work>
