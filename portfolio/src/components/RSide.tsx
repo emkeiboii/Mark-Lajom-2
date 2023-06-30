@@ -9,7 +9,7 @@ const RSide = () => {
       >
         marklajom.work@gmail.com
       </a>
-      <hr className="w-2/12 h-40 bg-white" />
+      <hr className="w-2/12 h-20 bg-white" />
     </div>
   );
 };
