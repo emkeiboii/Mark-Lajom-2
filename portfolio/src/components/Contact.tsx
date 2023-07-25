@@ -1,9 +1,6 @@
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="py-48 px-4 sm:px-0 md:px-0 lg:px-36 flex items-center justify-center gap-10"
-    >
+    <div id="contact" className=" px-4 flex items-center justify-center gap-10">
       <div className="">
         <form className="flex flex-col gap-5">
           <h1 className="font-bold text-4xl">Contact Form</h1>
@@ -35,9 +32,13 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <hr className="w-1 h-20 bg-white" />
+      <hr className="w-0.5 h-72 bg-white" />
       <div>
-        <h1>LETS CREATE TOGETHER</h1>
+        <h1 className="font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white p-5 hover:text-blue duration-500 ease-in-out ">
+          LETS <br />
+          CREATE <br />
+          TOGETHER!
+        </h1>
       </div>
     </div>
   );
