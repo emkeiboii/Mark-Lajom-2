@@ -29,15 +29,15 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="align-self outline outline-1 rounded text-lavender py-2 px-5 hover:bg-lavender hover:bg-opacity-20 duration-200 w-32 ease-out"
+            className="align-self outline outline-1 rounded text-lavender py-2 my-4 px-5 hover:bg-lavender hover:bg-opacity-20 duration-200 w-32 ease-out"
           >
             Send
           </button>
         </form>
       </div>
-      <hr className="w-0.5 lg:h-72 bg-white sm:hidden lg:block ease-in-out duration-700" />
+      <hr className="w-0.5 lg:h-72 bg-white hidden sm:hidden lg:block ease-in-out duration-700" />
       <div>
-        <h1 className="font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white py-5 hover:text-blue duration-500 ease-in-out ">
+        <h1 className="font-bold text-4xl sm:text-4xl md:text-6xl lg:text-7xl text-white py-5 hover:text-blue duration-500 ease-in-out ">
           LETS <br />
           CREATE <br />
           TOGETHER!
