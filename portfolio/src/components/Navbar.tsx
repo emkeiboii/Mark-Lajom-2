@@ -59,7 +59,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <button className="outline outline-1 rounded text-blue py-2 px-5 hover:bg-blue hover:bg-opacity-20 duration-200 ease-out">
+          <button className="outline outline-1 rounded text-blue py-2 px-5 hover:bg-blue hover:bg-opacity-20 duration-200 ease-out font-mono hidden md:block lg:block">
             CV
           </button>
         </li>
