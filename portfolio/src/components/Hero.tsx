@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -19,7 +20,15 @@ const Hero = () => {
           driven by passion
         </p>
         <button className="font-mono outline  outline-1 rounded text-lavender py-2 px-5 hover:bg-lavender hover:bg-opacity-20 duration-200 ease-out my-3 mr-4">
-          Contact me!
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Contact me!
+          </Link>
         </button>
         <button className="font-mono outline  outline-1 rounded text-blue py-2 px-5 hover:bg-blue hover:bg-opacity-20 duration-200 ease-out my-3 mr-4 md:hidden lg:hidden">
           CV
