@@ -16,6 +16,9 @@ export default {
       gridTemplateColumns: {
         2: "repeat(2, minmax(140px, 200px))",
       },
+      margin: {
+        "-half-screen": "45vh",
+      },
     },
   },
   plugins: [],
