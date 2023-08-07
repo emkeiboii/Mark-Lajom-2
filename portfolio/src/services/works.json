@@ -2,7 +2,7 @@
   {
     "id": 1,
     "projectName": "Portfolio",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tenetur delectus doloremque quibusdam laboriosam. Animi eos voluptatibus quaerat qui voluptates fugit tenetur nemo, odio consequuntur nisi molestiae quod laborum expedita voluptate architecto nesciunt quas accusamus similique perferendis unde illum delectus, ad deleniti. Necessitatibus a suscipit amet quis dolor modi molestiae?",
+    "description": "Yes! I've made my portfolio so many times over and over, with HTML, CSS and vanilla Javascript, but this version is made with React and using Tailwind to style my elements and components. Its was so fun to work on, and i will always work on improving it, as it follows me to my growing knowledge of web development (maybe one day it'll have cooler animations 🤩).",
     "projectImage": "/imgs/WebsiteProject.png",
     "projectLinkLive": "https://www.nike.com/it/",
     "projectLinkSource": "#"
