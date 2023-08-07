@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import RSide from "./components/RSide";
 import Work from "./components/Work";
 import { PuffLoader } from "react-spinners";
+import { Fade } from "react-reveal";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -26,6 +27,7 @@ function App() {
       ) : (
         <div>
           <Navbar></Navbar>
+
           <div className="flex justify-between">
             <LSide></LSide>
             <div className="lg:px-32 w-full md:px-8 sm:px-4">
