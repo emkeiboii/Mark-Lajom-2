@@ -9,7 +9,6 @@ import Navbar from "./components/Navbar";
 import RSide from "./components/RSide";
 import Work from "./components/Work";
 import { PuffLoader } from "react-spinners";
-import { Fade } from "react-reveal";
 
 function App() {
   const [loading, setLoading] = useState(false);

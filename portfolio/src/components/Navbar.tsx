@@ -1,4 +1,4 @@
-import { Fade } from "react-reveal";
+import Fade from "react-reveal";
 import { Link } from "react-scroll";
 import { useScrollDirection } from "../hooks/useScrollDirection";
 

@@ -1,7 +1,5 @@
-import React from "react";
 import works from "../services/works.json";
-import Fade from "react-reveal/Fade";
-
+import Fade from "react-reveal";
 const Work = () => {
   return (
     <div id="work" className="py-48 px-4 md:px-0 lg:px-0">

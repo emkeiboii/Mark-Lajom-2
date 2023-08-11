@@ -1,4 +1,4 @@
-import Fade from "react-reveal/fade";
+import Fade from "react-reveal";
 
 const LSide = () => {
   return (

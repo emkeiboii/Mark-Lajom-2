@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-scroll";
-import Fade from "react-reveal/fade";
+import Fade from "react-reveal";
 
 const Hero = () => {
   return (

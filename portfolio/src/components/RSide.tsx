@@ -1,4 +1,4 @@
-import Fade from "react-reveal/fade";
+import Fade from "react-reveal";
 const RSide = () => {
   return (
     <div className="hidden md:hidden lg:flex  bottom-0 fixed right-10 w-2 [writing-mode:vertical-rl] justify-center items-center text-white gap-2">
