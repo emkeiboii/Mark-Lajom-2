@@ -15,7 +15,7 @@ const Work = () => {
             <img
               src={item.projectImage}
               alt=""
-              className=" h-full object-cover md:max-w-xs lg:max-w-xs shadow-lg"
+              className="object-cover md:max-w-xs lg:max-w-xs shadow-lg"
             />
             <div>
               <h2 className="font-mono text-blue">{item.projectName}</h2>
