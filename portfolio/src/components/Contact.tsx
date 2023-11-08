@@ -39,18 +39,6 @@ const Contact = () => {
           </Fade>
         </form>
       </div>
-      <Fade bottom>
-        <hr className="w-0.5 lg:h-72 bg-white hidden sm:hidden lg:block ease-in-out duration-700" />
-      </Fade>
-      <div>
-        <Fade>
-          <h1 className="font-bold text-4xl sm:text-4xl md:text-6xl lg:text-7xl text-white py-5 hover:text-blue duration-500 ease-in-out ">
-            LETS <br />
-            CREATE <br />
-            TOGETHER!
-          </h1>
-        </Fade>
-      </div>
     </div>
   );
 };

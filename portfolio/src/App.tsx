@@ -19,6 +19,7 @@ function App() {
       setLoading(false);
     }, 3000);
   }, []);
+
   return (
     <div className="flex justify-center items-center">
       {loading ? (
