@@ -23,26 +23,26 @@ export default function App() {
 
   return (
     <div className="flex justify-center items-center">
-      {/* {loading ? (
+      {loading ? (
         <PuffLoader color="#5EDAE9" className="-mt-half-screen" />
-      ) : ( */}
-      <div>
-        <Navbar></Navbar>
+      ) : (
+        <div>
+          <Navbar></Navbar>
 
-        <div className="flex justify-between">
-          <LSide></LSide>
-          <div className="lg:px-32 w-full md:px-8 sm:px-4">
-            <Hero></Hero>
-            <About></About>
-            <Work></Work>
-            <Accordion />
-            <Contact></Contact>
-            <Footer></Footer>
+          <div className="flex justify-between">
+            <LSide></LSide>
+            <div className="lg:px-32 w-full md:px-8 sm:px-4">
+              <Hero></Hero>
+              <About></About>
+              <Work></Work>
+              <Accordion />
+              <Contact></Contact>
+              <Footer></Footer>
+            </div>
+            <RSide></RSide>
           </div>
-          <RSide></RSide>
         </div>
-      </div>
-      {/* )} */}
+      )}
     </div>
   );
 }
