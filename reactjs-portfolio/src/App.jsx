@@ -8,6 +8,7 @@ import LSide from "./components/LSide.jsx";
 import Navbar from "./components/Navbar.jsx";
 import RSide from "./components/RSide.jsx";
 import Work from "./components/Work.jsx";
+import Accordion from "./components/Accordion.jsx";
 import { PuffLoader } from "react-spinners";
 
 export default function App() {
@@ -22,25 +23,26 @@ export default function App() {
 
   return (
     <div className="flex justify-center items-center">
-      {loading ? (
+      {/* {loading ? (
         <PuffLoader color="#5EDAE9" className="-mt-half-screen" />
-      ) : (
-        <div>
-          <Navbar></Navbar>
+      ) : ( */}
+      <div>
+        <Navbar></Navbar>
 
-          <div className="flex justify-between">
-            <LSide></LSide>
-            <div className="lg:px-32 w-full md:px-8 sm:px-4">
-              <Hero></Hero>
-              <About></About>
-              <Work></Work>
-              <Contact></Contact>
-              <Footer></Footer>
-            </div>
-            <RSide></RSide>
+        <div className="flex justify-between">
+          <LSide></LSide>
+          <div className="lg:px-32 w-full md:px-8 sm:px-4">
+            <Hero></Hero>
+            <About></About>
+            <Work></Work>
+            <Accordion />
+            <Contact></Contact>
+            <Footer></Footer>
           </div>
+          <RSide></RSide>
         </div>
-      )}
+      </div>
+      {/* )} */}
     </div>
   );
 }
