@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--clr-darkblue);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-greyblue);
+  border-radius: 20px;
+}
