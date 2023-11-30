@@ -13,9 +13,13 @@ export default function AccordionItem({
   }
 
   return (
-    <div className="mb-3 w-96" onClick={() => handleToggle()} id={id}>
+    <div
+      className="mb-3 w-screen max-w-sm md:max-w-md lg:max-w-lg"
+      onClick={() => handleToggle()}
+      id={id}
+    >
       <div
-        className={`border-white border font-mono  py-2 px-6 cursor-pointer hover:text-navy hover:bg-white drop-shadow-lg ${
+        className={`border-white border font-mono  py-2 px-6 cursor-pointer ease-in-out hover:text-navy hover:bg-white drop-shadow-lg ${
           isOpen ? "bg-white text-navy" : ""
         }`}
       >

@@ -7,7 +7,7 @@ export default function Accordion() {
   const [curOpen, setCurOpen] = useState(null);
 
   return (
-    <div className="pb-48 pt-30 px-4 md:px-0 lg:px-0 flex flex-col justify-center items-center gap-6 ">
+    <div className="pt-20 pb-48 px-4 sm:px-0 md:px-0 lg:px-28 flex items-center justify-center flex-col">
       <Fade>
         <h2 className="font-mono text-lg">other small projects</h2>
         <div>
