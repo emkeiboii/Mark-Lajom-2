@@ -8,6 +8,7 @@ export default function LSide() {
           href="https://github.com/emkeiboii"
           target="_blank"
           className=" duration-200 ease-out fill-white hover:fill-blue"
+          rel="noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +22,7 @@ export default function LSide() {
           href="https://www.linkedin.com/in/mark-lajom-008b9b250/"
           target="_blank"
           className="duration-200 ease-out fill-white hover:fill-blue"
+          rel="noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +36,7 @@ export default function LSide() {
           href="https://www.instagram.com/emkeiboii/"
           target="_blank"
           className="duration-200 ease-out fill-white hover:fill-blue"
+          rel="noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

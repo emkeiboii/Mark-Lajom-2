@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Fade from "react-reveal";
 
 export default function About() {
@@ -22,7 +23,11 @@ export default function About() {
             <br />
             Thanks to TheOdinProject i've come to understand foreign concepts to
             me such as the terminal, Git and{" "}
-            <a href="https://github.com/emkeiboii" target="_blank">
+            <a
+              href="https://github.com/emkeiboii"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span
                 id="github"
                 className="text-blue underline hover:opacity-80"

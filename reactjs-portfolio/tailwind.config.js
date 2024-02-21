@@ -3,11 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      navy: "#0B1325",
-      blue: "#5EDAE9",
-      lavender: "#AF98E6",
-      white: "#DFDFDF",
-      grey: "#99A6A8",
+      primary: "#ff2e00",
+      secondary: "#ffd43f",
+      dark: "#565254",
+      white: "#fefff5",
+      grey: "#d6d6d6",
     },
     extend: {
       fontFamily: {

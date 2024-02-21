@@ -18,13 +18,14 @@ export default function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 0);
   }, []);
 
   return (
     <div className="flex justify-center items-center">
       {loading ? (
-        <PuffLoader color="#5EDAE9" className="-mt-half-screen" />
+        // <PuffLoader color="#5EDAE9" className="-mt-half-screen" />
+        console.log("loading")
       ) : (
         <div>
           <Navbar></Navbar>

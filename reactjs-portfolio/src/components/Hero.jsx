@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-scroll";
 import Fade from "react-reveal";
 
@@ -7,7 +8,7 @@ export default function Hero() {
       id="hero"
       className="py-48 px-4 sm:px-0 md:px-0 lg:px-28 flex items-center justify-center flex-col"
     >
-      <div>
+      <div className="text-center">
         <Fade>
           <h2 className="font-mono text-blue">Hey! My name is:</h2>
           <h1 className="font-extrabold text-4xl md:text-6xl lg:text-7xl -mx-1  text-blue  ">
@@ -17,8 +18,7 @@ export default function Hero() {
             I'm a front-end web developer
           </h2>
           <p className="text-grey">
-            I love coding, cooking and eating. I'm inspired by creativity and
-            driven by passion
+            I love coding, cars and food. Inspired by greatness.
           </p>
           <button className="font-mono outline  outline-1 rounded text-lavender py-2 px-5 hover:bg-lavender hover:bg-opacity-20 duration-200 ease-out my-5 mr-4">
             <Link
