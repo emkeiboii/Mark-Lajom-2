@@ -9,13 +9,13 @@ export default function About() {
     >
       <div>
         <Fade>
-          <h1 className="font-extrabold text-2xl mb-4">
-            <span className="text-blue">&gt;</span>About
+          <h1 className="font-extrabold text-2xl mb-4 text-dark">
+            <span className="text-secondary">&gt;</span>About
           </h1>
-          <p className="text-grey text-justify">
+          <p className="text-dark text-justify">
             Hey! My name is Mark Lajom, after completing highschool as a graphic
             designer, i jumped on a journey to learn
-            <span className="text-blue"> web development</span>. I started
+            <span className="text-primary"> web development</span>. I started
             learning the basics on HTML, CSS and JavaScript, using free material
             on the internet: The Odin Project, FreeCodeCamp many youtube videos
             and various courses.
@@ -30,7 +30,7 @@ export default function About() {
             >
               <span
                 id="github"
-                className="text-blue underline hover:opacity-80"
+                className="text-primary underline hover:opacity-80"
               >
                 GitHub
               </span>
@@ -38,7 +38,7 @@ export default function About() {
             <br />
             <br />
             After a year of dedication, i feel ready to take on a real life job,{" "}
-            <span className="text-blue">
+            <span className="text-dark">
               scared and curious of what i don't know, excited of what's to
               come.
             </span>
@@ -48,18 +48,18 @@ export default function About() {
             <br />
             <br />
           </p>
-          <ul className="text-grey font-mono grid grid-cols-2 gap-2">
+          <ul className="text-dark font-mono grid grid-cols-2 gap-2">
             <li>
-              <span className="text-blue">&gt;</span>JavaScript
+              <span className="text-primary">&gt;</span>JavaScript
             </li>
             <li>
-              <span className="text-blue">&gt;</span>Typescript
+              <span className="text-primary">&gt;</span>Typescript
             </li>
             <li>
-              <span className="text-blue">&gt;</span>React
+              <span className="text-primary">&gt;</span>React
             </li>
             <li>
-              <span className="text-blue">&gt;</span>Libraries
+              <span className="text-primary">&gt;</span>Libraries
             </li>
           </ul>
         </Fade>

@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/About.jsx";
-import Contact from "./components/Contact.jsx";
+// import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Hero from "./components/Hero.jsx";
 import LSide from "./components/LSide.jsx";
 import Navbar from "./components/Navbar.jsx";
 import RSide from "./components/RSide.jsx";
 import Work from "./components/Work.jsx";
-import Accordion from "./components/Accordion.jsx";
+// import Accordion from "./components/Accordion.jsx";
 import { PuffLoader } from "react-spinners";
 
 export default function App() {
@@ -18,14 +18,13 @@ export default function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 0);
+    }, 3000);
   }, []);
 
   return (
     <div className="flex justify-center items-center">
       {loading ? (
-        // <PuffLoader color="#5EDAE9" className="-mt-half-screen" />
-        console.log("loading")
+        <PuffLoader color="#ff2e00" className="-mt-half-screen" />
       ) : (
         <div>
           <Navbar></Navbar>
@@ -36,8 +35,7 @@ export default function App() {
               <Hero></Hero>
               <About></About>
               <Work></Work>
-              <Accordion />
-              <Contact></Contact>
+              {/* <Accordion /> */}
               <Footer></Footer>
             </div>
             <RSide></RSide>

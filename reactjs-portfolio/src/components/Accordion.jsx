@@ -9,7 +9,9 @@ export default function Accordion() {
   return (
     <div className="pt-20 pb-48 px-4 sm:px-0 md:px-0 lg:px-28 flex items-center justify-center flex-col">
       <Fade>
-        <h2 className="font-mono text-lg">other small projects</h2>
+        <h2 className="font-mono text-lg text-secondary">
+          other small projects
+        </h2>
         <div>
           {sprojects.map((sproject) => (
             <AccordionItem

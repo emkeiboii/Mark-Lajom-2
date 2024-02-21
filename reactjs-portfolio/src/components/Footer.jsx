@@ -4,14 +4,15 @@ export default function Footer() {
   return (
     <div className="items-center justify-center flex-col flex pt-48 pb-12 gap-4">
       <Fade bottom>
-        <h1 className="font-mono tracking-widest text-sm text-center">
+        <h1 className="font-mono tracking-widest text-sm text-center text-primary">
           DEVELOPED AND DESIGNED BY MARK LAJOM
         </h1>
         <div className="flex gap-4">
           <a
             href="https://github.com/emkeiboii"
             target="_blank"
-            className=" duration-200 ease-out fill-white hover:fill-blue"
+            className=" duration-200 ease-out fill-dark hover:fill-blue"
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +25,8 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/mark-lajom-008b9b250/"
             target="_blank"
-            className="duration-200 ease-out fill-white hover:fill-blue"
+            className="duration-200 ease-out fill-dark hover:fill-blue"
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +39,8 @@ export default function Footer() {
           <a
             href="https://www.instagram.com/emkeiboii/"
             target="_blank"
-            className="duration-200 ease-out fill-white hover:fill-blue"
+            className="duration-200 ease-out fill-dark hover:fill-blue"
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

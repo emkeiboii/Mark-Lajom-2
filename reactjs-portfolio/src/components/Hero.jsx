@@ -10,14 +10,14 @@ export default function Hero() {
     >
       <div className="text-center">
         <Fade>
-          <h2 className="font-mono text-blue">Hey! My name is:</h2>
-          <h1 className="font-extrabold text-4xl md:text-6xl lg:text-7xl -mx-1  text-blue  ">
+          <h2 className="font-mono text-dark">Hey! My name is:</h2>
+          <h1 className="font-extrabold text-4xl md:text-6xl lg:text-7xl -mx-1  text-primary  ">
             Mark Lajom
           </h1>
-          <h2 className="font-extrabold text-4xl md:text-6xl lg:text-7xl mb-3">
+          <h2 className="font-extrabold text-4xl md:text-6xl lg:text-7xl mb-3 text-dark">
             I'm a front-end web developer
           </h2>
-          <p className="text-grey">
+          <p className="text-secondary">
             I love coding, cars and food. Inspired by greatness.
           </p>
           <button className="font-mono outline  outline-1 rounded text-lavender py-2 px-5 hover:bg-lavender hover:bg-opacity-20 duration-200 ease-out my-5 mr-4">
