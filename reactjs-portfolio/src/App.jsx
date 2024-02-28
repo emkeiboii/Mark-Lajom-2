@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/About.jsx";
 // import Contact from "./components/Contact.jsx";
@@ -9,22 +8,23 @@ import Navbar from "./components/Navbar.jsx";
 import RSide from "./components/RSide.jsx";
 import Work from "./components/Work.jsx";
 // import Accordion from "./components/Accordion.jsx";
-import { PuffLoader } from "react-spinners";
+import LoadingScreen from "./components/LoadingScreen.jsx";
+import { useEffect, useState } from "react";
 
 export default function App() {
-  const [loading, setLoading] = useState(false);
+  const [choosing, setChoosing] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
+    setChoosing(true);
     setTimeout(() => {
-      setLoading(false);
+      setChoosing(false);
     }, 3000);
   }, []);
 
   return (
     <div className="flex justify-center items-center">
-      {loading ? (
-        <PuffLoader color="#ff2e00" className="-mt-half-screen" />
+      {choosing ? (
+        <LoadingScreen />
       ) : (
         <div>
           <Navbar></Navbar>
