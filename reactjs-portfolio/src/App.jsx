@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/About.jsx";
 // import Contact from "./components/Contact.jsx";
@@ -9,39 +8,44 @@ import Navbar from "./components/Navbar.jsx";
 import RSide from "./components/RSide.jsx";
 import Work from "./components/Work.jsx";
 // import Accordion from "./components/Accordion.jsx";
-import { PuffLoader } from "react-spinners";
+import LoadingScreen from "./components/LoadingScreen.jsx";
+import { useEffect, useState } from "react";
+import Contact from "./components/Contact.jsx";
 
 export default function App() {
-  const [loading, setLoading] = useState(false);
+  const [choosing, setChoosing] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
+    setChoosing(true);
     setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+      setChoosing(false);
+    }, 0);
   }, []);
 
   return (
-    <div className="flex justify-center items-center">
-      {loading ? (
-        <PuffLoader color="#ff2e00" className="-mt-half-screen" />
+    <>
+      {choosing ? (
+        <LoadingScreen className="absolute" />
       ) : (
-        <div>
-          <Navbar></Navbar>
+        <div className="flex justify-center items-center ">
+          <div>
+            <Navbar primary="brightRed" />
 
-          <div className="flex justify-between">
-            <LSide></LSide>
-            <div className="lg:px-32 w-full md:px-8 sm:px-4">
-              <Hero></Hero>
-              <About></About>
-              <Work></Work>
-              {/* <Accordion /> */}
-              <Footer></Footer>
+            <div className="flex justify-between">
+              <LSide></LSide>
+              <div className="lg:px-32 w-full md:px-8 sm:px-4">
+                <Hero></Hero>
+                <About></About>
+                <Work></Work>
+                {/* <Accordion /> */}
+                <Contact />
+                <Footer></Footer>
+              </div>
+              <RSide></RSide>
             </div>
-            <RSide></RSide>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
