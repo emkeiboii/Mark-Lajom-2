@@ -12,8 +12,10 @@ function LoadingScreen() {
   };
 
   return (
-    <div className={`bg-${color}`}>
-      <button onClick={handleClick} className="bg-primary">
+    <div
+      className={`bg-${color} absolute w-screen h-screen flex justify-center items-center`}
+    >
+      <button onClick={handleClick} className="bg-secondary">
         Change Color
       </button>
       <div style={{ color }}>Your Content Here</div>
