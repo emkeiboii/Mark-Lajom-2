@@ -11,25 +11,51 @@ import Work from "./components/Work.jsx";
 import LoadingScreen from "./components/LoadingScreen.jsx";
 import { useEffect, useState } from "react";
 import Contact from "./components/Contact.jsx";
+const colors = {
+  brightRed: "#FA2223",
+  yellow: "#F8CD02",
+  brightBlue: "#00A3E0",
+  darkBlue: "#153149",
+  darkGreen: "#152514",
+  brightGreen: "#029220",
+  darkRed: "#9D0620",
+};
 
 export default function App() {
   const [choosing, setChoosing] = useState(false);
+  const [primaryColor, setPrimaryColor] = useState("#FA2223");
+  const [secondaryColor, setSecondaryColor] = useState("#F8CD02");
+
+  const handleColorChange = (hexCode, colorType) => {
+    if (colorType === "primary") {
+      setPrimaryColor(hexCode);
+      console.log(colorType, hexCode);
+    } else if (colorType === "secondary") {
+      setSecondaryColor(hexCode);
+      console.log(colorType, hexCode);
+    }
+  };
 
   useEffect(() => {
     setChoosing(true);
     setTimeout(() => {
       setChoosing(false);
-    }, 0);
+    }, 50000);
   }, []);
 
   return (
     <>
       {choosing ? (
-        <LoadingScreen className="absolute" />
+        <LoadingScreen
+          colors={colors}
+          onColorChange={(hexCode, colorType) =>
+            handleColorChange(hexCode, colorType)
+          }
+        />
       ) : (
         <div className="flex justify-center items-center ">
           <div>
-            <Navbar primary="brightRed" />
+            <Navbar primary={primaryColor} secondary={secondaryColor} />
 
             <div className="flex justify-between">
               <LSide></LSide>

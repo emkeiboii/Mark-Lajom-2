@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import { useScrollDirection } from "../hooks/useScrollDirection";
 
 // eslint-disable-next-line react/prop-types
-export default function Navbar({ primary }) {
+export default function Navbar({ primary, secondary }) {
   const scrollDirection = useScrollDirection();
   console.log(primary);
 
@@ -14,11 +14,8 @@ export default function Navbar({ primary }) {
     >
       <Link
         to="hero"
-<<<<<<< HEAD
-        className="text-primary text-xl md:text-3xl lg:text-3xl font-bold cursor-pointer hover:text-opacity-80 duration-200 ease-in-out"
-=======
-        className={`text-${primary} text-xl md:text-3xl lg:text-3xl font-bold cursor-pointer hover:text-opacity-80 duration-200 ease-in-out`}
->>>>>>> refs/remotes/origin/main
+        style={{ color: primary }}
+        className={`text-xl md:text-3xl lg:text-3xl font-bold cursor-pointer hover:text-opacity-80 duration-200 ease-in-out`}
         spy={true}
         smooth={true}
         offset={-100}
@@ -27,76 +24,31 @@ export default function Navbar({ primary }) {
         emkei
       </Link>
       <ul className="flex gap-5 items-center">
-<<<<<<< HEAD
-        <li className="hover:text-primary duration-200 ease-in-out text-dark">
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            className="cursor-pointer"
-          >
-            <span className="text-primary">&gt;</span>about
-          </Link>
-        </li>
-        <li className="hover:text-primary duration-200 ease-in-out text-dark">
-          <Link
-            to="work"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            className="cursor-pointer"
-          >
-            <span className="text-primary">&gt;</span>work
-          </Link>
-        </li>
-        <li className="hover:text-primary duration-200 ease-in-out text-dark">
-          <Link
-            to="contact"
-            className="cursor-pointer"
-=======
-        <li
-          className={`hover:text-${primary} duration-200 ease-in-out text-dark cursor-pointer`}
-        >
+        <li className="hover:text-primary duration-200 ease-in-out text-dark cursor-pointer">
           <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
-            <span className={`text-${primary}`}>&gt;</span>about
+            <span style={{ color: secondary }}>&gt;</span>about
           </Link>
         </li>
-        <li
-          className={`hover:text-${primary} duration-200 ease-in-out text-dark cursor-pointer`}
-        >
+        <li className="hover:text-primary duration-200 ease-in-out text-dark cursor-pointer">
           <Link to="work" spy={true} smooth={true} offset={50} duration={500}>
-            <span className={`text-${primary}`}>&gt;</span>work
+            <span style={{ color: secondary }}>&gt;</span>work
           </Link>
         </li>
-        <li
-          className={`hover:text-${primary} duration-200 ease-in-out text-dark cursor-pointer`}
-        >
+        <li className="hover:text-primary duration-200 ease-in-out text-dark cursor-pointer">
           <Link
             to="contact"
->>>>>>> refs/remotes/origin/main
             spy={true}
             smooth={true}
             offset={50}
             duration={500}
           >
-<<<<<<< HEAD
-            <span className="text-primary">&gt;</span>contact
-          </Link>
-        </li>
-        <li>
-          <button className="outline outline-1 rounded text-dark py-2 px-5 hover:bg-primary hover:text-primary hover:bg-opacity-20 duration-200 ease-out font-mono hidden md:block lg:block">
-=======
-            <span className={`text-${primary}`}>&gt;</span>contact
+            <span style={{ color: secondary }}>&gt;</span>contact
           </Link>
         </li>
         <li>
           <button
             className={`outline outline-1 rounded text-dark py-2 px-5 hover:bg-${primary} hover:text-${primary} hover:bg-opacity-20 duration-200 ease-out font-mono hidden md:block lg:block`}
           >
->>>>>>> refs/remotes/origin/main
             CV
           </button>
         </li>
