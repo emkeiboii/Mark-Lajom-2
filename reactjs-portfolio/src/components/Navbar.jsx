@@ -6,6 +6,17 @@ export default function Navbar({ primary, secondary }) {
   const scrollDirection = useScrollDirection();
   console.log(primary);
 
+  const hoverNav = {
+    transition: "color 0.3s ease", // Transition for smooth hover effect
+  };
+
+  function handleMouseEnter() {
+    hoverNav.color = secondary;
+  }
+  function handleMouseLeave() {
+    hoverNav.color = secondary;
+  }
+
   return (
     <div
       className={`flex justify-between px-2 md:py-6 md:px-10 lg:py-6 lg:px-10 items-center sticky ${
@@ -24,7 +35,12 @@ export default function Navbar({ primary, secondary }) {
         emkei
       </Link>
       <ul className="flex gap-5 items-center">
-        <li className="hover:text-primary duration-200 ease-in-out text-dark cursor-pointer">
+        <li
+          style={hoverNav}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="hover:text-primary duration-200 ease-in-out text-dark cursor-pointer"
+        >
           <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
             <span style={{ color: secondary }}>&gt;</span>about
           </Link>

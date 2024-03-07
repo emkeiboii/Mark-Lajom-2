@@ -4,8 +4,8 @@ export default {
   theme: {
     colors: {
       dark: "#565254",
-      white: "#fefff5",
-      grey: "#d6d6d6",
+      white: "A5A4AC",
+      grey: "#546A78",
     },
     extend: {
       fontFamily: {

@@ -1,20 +1,36 @@
 import { useState } from "react";
 
-function LoadingScreen({ colors, onColorChange }) {
+function LoadingScreen({ colors, onColorChange, onConfirmation }) {
   const colorsArray = Object.entries(colors);
   const [currentColorIndex1, setCurrentColorIndex1] = useState(0);
   const [currentColorIndex2, setCurrentColorIndex2] = useState(1);
 
   function rotateColors(setter, currentIndex, colorType) {
-    const hexCode = colorsArray[currentIndex][1];
     setter((prevIndex) => (prevIndex + 1) % colorsArray.length);
-    console.log(colorType, hexCode); // Log the colorType and hexCode for debugging
-    onColorChange(hexCode, colorType); // Pass the updated hexCode and colorType to the parent component
+    const newIndex = (currentIndex + 1) % colorsArray.length;
+    console.log(colorsArray[newIndex][1]); // Display only the hex code
+    onColorChange(colorsArray[newIndex][1], colorType);
+  }
+
+  function handleConfirm() {
+    onConfirmation();
   }
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 justify-center items-center">
+        <div
+          className="w-full h-3 "
+          style={{
+            backgroundColor: colorsArray[currentColorIndex1][1],
+          }}
+        ></div>
+        <div
+          className="w-6 h-3 "
+          style={{
+            backgroundColor: colorsArray[currentColorIndex2][1],
+          }}
+        ></div>
         <button
           onClick={() =>
             rotateColors(setCurrentColorIndex1, currentColorIndex1, "primary")
@@ -39,6 +55,7 @@ function LoadingScreen({ colors, onColorChange }) {
           Secondary
           <span className="ml-2">{colorsArray[currentColorIndex2][1]}</span>
         </button>
+        <button onClick={() => handleConfirm()}>confirm</button>
       </div>
     </div>
   );
