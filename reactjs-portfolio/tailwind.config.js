@@ -2,12 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    colors: {
-      dark: "#565254",
-      white: "A5A4AC",
-      grey: "#546A78",
-    },
     extend: {
+      colors: {
+        dark: "#565254",
+        white: "#FFFFFF",
+        grey: "#546A78",
+      },
       fontFamily: {
         body: ["Inter"],
       },

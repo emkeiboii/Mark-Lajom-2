@@ -19,14 +19,13 @@ export default function Navbar({ primary, secondary }) {
 
   return (
     <div
-      className={`flex justify-between px-2 md:py-6 md:px-10 lg:py-6 lg:px-10 items-center sticky ${
+      className={`${
         scrollDirection === "down" ? "-top-24" : "top-0"
-      } h-24 transition-all duration-500 backdrop-blur-sm shadow-lg z-50`}
+      } items-center gap-10 transition-all duration-500 backdrop-filter backdrop-blur-lg bg-opacity-30 shadow-lg flex justify-between sticky mx-10 md:mx-80 lg:mx-80 mt-5 px-5 py-2 rounded bg-black`}
     >
       <Link
         to="hero"
-        style={{ color: primary }}
-        className={`text-xl md:text-3xl lg:text-3xl font-bold cursor-pointer hover:text-opacity-80 duration-200 ease-in-out`}
+        className={`text-xl text-white md:text-2xl lg:text-3xl font-bold cursor-pointer hover:text-opacity-80 duration-200 ease-in-out`}
         spy={true}
         smooth={true}
         offset={-100}
@@ -39,18 +38,18 @@ export default function Navbar({ primary, secondary }) {
           style={hoverNav}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className="hover:text-primary duration-200 ease-in-out text-dark cursor-pointer"
+          className="duration-300 ease-in-out text-white cursor-pointer hover:opacity-80"
         >
           <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
-            <span style={{ color: secondary }}>&gt;</span>about
+            <span>&gt;</span>about
           </Link>
         </li>
-        <li className="hover:text-primary duration-200 ease-in-out text-dark cursor-pointer">
+        <li className="hover:text-white duration-200 ease-in-out text-white cursor-pointer hover:opacity-80">
           <Link to="work" spy={true} smooth={true} offset={50} duration={500}>
-            <span style={{ color: secondary }}>&gt;</span>work
+            <span>&gt;</span>work
           </Link>
         </li>
-        <li className="hover:text-primary duration-200 ease-in-out text-dark cursor-pointer">
+        <li className="hover:text-white duration-200 ease-in-out text-white cursor-pointer hover:opacity-80">
           <Link
             to="contact"
             spy={true}
@@ -58,13 +57,11 @@ export default function Navbar({ primary, secondary }) {
             offset={50}
             duration={500}
           >
-            <span style={{ color: secondary }}>&gt;</span>contact
+            <span>&gt;</span>contact
           </Link>
         </li>
         <li>
-          <button
-            className={`outline outline-1 rounded text-dark py-2 px-5 hover:bg-${primary} hover:text-${primary} hover:bg-opacity-20 duration-200 ease-out font-mono hidden md:block lg:block`}
-          >
+          <button className="outline outline-1 rounded text-white py-1 px-5 hover:bg-white hover:text-white hover:bg-opacity-20 duration-200 ease-out font-mono hidden lg:block">
             CV
           </button>
         </li>

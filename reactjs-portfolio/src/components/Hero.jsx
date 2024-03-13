@@ -15,7 +15,7 @@ export default function Hero({ primary, secondary }) {
         >
           Front-end developer and Graphic designer
         </h2>
-        <p style={{ color: secondary }}>
+        <p style={{ color: secondary }} className="font-bold">
           I love coding, cars and food. Inspired by greatness.
         </p>
         <button className="font-mono outline  outline-1 rounded text-lavender py-2 px-5 hover:bg-lavender hover:bg-opacity-20 duration-200 ease-out my-5 mr-4">
