@@ -29,10 +29,8 @@ export default function App() {
   const handleColorChange = (hexCode, colorType) => {
     if (colorType === "primary") {
       setPrimaryColor(hexCode);
-      console.log(colorType, hexCode);
     } else if (colorType === "secondary") {
       setSecondaryColor(hexCode);
-      console.log(colorType, hexCode);
     }
   };
 
@@ -59,8 +57,11 @@ export default function App() {
               <LSide></LSide>
               <div className="lg:px-32 w-full md:px-8 sm:px-4">
                 <Hero primary={primaryColor} secondary={secondaryColor}></Hero>
-                <About></About>
-                <Work></Work>
+                <About
+                  primary={primaryColor}
+                  secondary={secondaryColor}
+                ></About>
+                <Work primary={primaryColor} secondary={secondaryColor}></Work>
                 {/* <Accordion /> */}
                 <Contact />
                 <Footer></Footer>

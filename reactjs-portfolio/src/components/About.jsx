@@ -1,14 +1,21 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 
-export default function About() {
+export default function About({ primary, secondary }) {
   return (
     <div
       id="about"
       className="py-48 px-4 sm:px-0 md:px-0 lg:px-36 flex items-center justify-center flex-col"
     >
       <div>
-        <h1 className="font-extrabold text-2xl mb-4 text-dark">
-          <span className="text-secondary">&gt;</span>About
+        <h1
+          className="font-extrabold text-2xl mb-4 text-dark"
+          style={{ color: primary }}
+        >
+          <span style={{ color: secondary }} className="text-secondary">
+            &gt;
+          </span>
+          About
         </h1>
         <p className="text-dark text-justify">
           Hey! My name is Mark Lajom, after completing highschool as a graphic
